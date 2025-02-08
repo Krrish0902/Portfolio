@@ -1,4 +1,4 @@
-import pp from './assets/Profile_pic.jpg';
+import pp from './Assets/Profile_pic-lOCaCx3Z.jpg';
 
 const About = () => {
   return (
