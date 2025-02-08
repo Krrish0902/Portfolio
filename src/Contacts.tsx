@@ -6,9 +6,9 @@ const Contacts = () => {
   const form = useRef<HTMLFormElement>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
-  const YOUR_SERVICE_ID = import.meta.env.YOUR_SERVICE_ID;
-  const YOUR_TEMPLATE_ID = import.meta.env.YOUR_TEMPLATE_ID;
-  const YOUR_USER_ID = import.meta.env.YOUR_USER_ID;
+  const serviceId = import.meta.env.VITE_YOUR_SERVICE_ID;
+  const templateId = import.meta.env.VITE_YOUR_TEMPLATE_ID;
+  const userId = import.meta.env.VITE_YOUR_USER_ID;
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -26,7 +26,7 @@ const Contacts = () => {
         return;
       }
 
-      emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_USER_ID)
+      emailjs.sendForm(serviceId, templateId, form.current, userId)
         .then((result) => {
           console.log(result.text);
           setModalMessage('Message sent successfully!');

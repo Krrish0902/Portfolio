@@ -15,9 +15,9 @@ const About = () => {
         <div>
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
-            With over 5 years of experience in web development, I've had the privilege of working with diverse clients
-            and technologies. My journey in tech started with a passion for creating user-centric solutions that make
-            a real difference.
+           A web developer and tech enthusiast passionate about building innovative and user-friendly applications.
+          Currently pursuing my BTech, I enjoy learning new technologies and solving real-world problems through code. 
+          Always eager to collaborate and explore new ideas!
           </p>
           <div className="grid grid-cols-2 gap-4 mb-8">
             <div>
