@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "vite": "^6.1.0" ,
   "homepage": "https://Krrish0902.github.io/Portfolio/",
   "scripts": {
     "dev": "vite",
