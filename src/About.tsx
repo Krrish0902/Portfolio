@@ -9,7 +9,7 @@ const About = () => {
           <img 
             src={pp} 
             alt="Profile" 
-            className="rounded-lg shadow-2xl w-2/3 h-auto object-cover ml-32 mr 10"
+            className="rounded-lg shadow-2xl w-full sm:w-2/3 h-auto object-cover mx-auto sm:ml-24 sm:mr-10"
           />
         </div>
         <div>
