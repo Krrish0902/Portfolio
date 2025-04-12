@@ -5,8 +5,15 @@ const Project = () => {
     <section id="projects" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="flex md:grid-cols-3 gap-8 sm:ml-16">
           {[
+            {
+              title: "Artist Discovery App",
+              description: "A React Native based app connecting music lovers with local artists, enabling direct contact without intermediaries.",
+              image: "https://images.pexels.com/photos/22185/pexels-photo.jpg",
+              tech: ["React Native", "Supabase", "TypeScript"],
+              link: "https://github.com/Krrish0902/APP" // Add the link to the project
+            },
             {
               title: "DeepFake Detection Tool",
               description: "A React-based web app and Chrome extension leveraging a MobileNetV2 model to detect deepfake images with 77% accuracy.",
@@ -29,7 +36,6 @@ const Project = () => {
                   alt={project.title}
                   className="w-full h-64 object-cover transition-transform group-hover:scale-110"
                 />
-              </a>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
@@ -43,6 +49,7 @@ const Project = () => {
                   </div>
                 </div>
               </div>
+              </a>
             </div>
           ))}
         </div>

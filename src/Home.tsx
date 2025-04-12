@@ -18,7 +18,7 @@ const Home = () => {
           </p>
           <div className="flex gap-4">
             <a
-              href="https://github.com/Krrish0902/DEEPFAKE_DETECTOR" 
+              href="https://github.com/Krrish0902" 
               className="px-6 py-3 bg-violet-600 hover:bg-violet-700 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
             >
               View Projects
